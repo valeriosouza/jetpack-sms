@@ -33,7 +33,7 @@ Known to develop, help in https://github.com/valeriosouza/jetpack-sms
 
 Have suggestions for new features? https://github.com/valeriosouza/jetpack-sms/issues/new
 
-Want to keep up wWant to be a beta tester of the new versions? https://www.facebook.com/groups/jetpackaddonsbetagroup/
+Want to be a beta tester of the new versions? https://www.facebook.com/groups/jetpackaddonsbetagroup/
 
 Want to keep up with the latest news from this plugin? Like Facebook [https://www.facebook.com/JetpackAddons](https://www.facebook.com/JetpackAddons)
 
