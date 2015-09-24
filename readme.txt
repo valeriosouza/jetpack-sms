@@ -21,7 +21,7 @@ This supplies additional Jetpack sharing SMS Button for your website.
 
 = Heads up: =
 
-Read the [FAQ](https://wordpress.org/plugins/sms-jetpack-button/faq/) before use.
+Read the [FAQ](https://wordpress.org/plugins/sms-sharing-button-for-jetpack/faq/) before use.
 
 Want to help? Use the [support](https://wordpress.org/support/plugin/sms-sharing-button-for-jetpack)
 
@@ -33,7 +33,9 @@ Known to develop, help in https://github.com/valeriosouza/jetpack-sms
 
 Have suggestions for new features? https://github.com/valeriosouza/jetpack-sms/issues/new
 
-Want to keep up with the latest news from this plugin? Follow Twitter [@valeriosza](https://twitter.com/valeriosza)
+Want to keep up wWant to be a beta tester of the new versions? https://www.facebook.com/groups/jetpackaddonsbetagroup/
+
+Want to keep up with the latest news from this plugin? Like Facebook [https://www.facebook.com/JetpackAddons](https://www.facebook.com/JetpackAddons)
 
 == Installation ==
 

@@ -1,33 +1,41 @@
+# 
+# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: Jetpack SMS\n"
-"POT-Creation-Date: 2015-04-09 17:42-0300\n"
-"PO-Revision-Date: 2015-04-09 17:51-0300\n"
-"Last-Translator: Valério Souza <eu@valeriosouza.com.br>\n"
-"Language-Team: Valerio Souza <valeriosza@gmail.com>\n"
-"Language: pt_BR\n"
+"Project-Id-Version: Sms Sharing Button for Jetpack\n"
+"POT-Creation-Date: 2015-09-17 23:37-0300\n"
+"PO-Revision-Date: 2015-09-24 01:06+0000\n"
+"Last-Translator: Valério Souza <valeriosza@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) (http://www.transifex.com/valeriosouza/sms-sharing-button-for-jetpack/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.10\n"
-"X-Poedit-Basepath: .\n"
+"Language: pt_BR\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 1.7.5\n"
+"X-Poedit-Basepath: .\n"
 "X-Poedit-KeywordsList: __;_x;_e\n"
 "X-Poedit-SearchPath-0: ..\n"
 "X-Poedit-SearchPath-1: .\n"
 
-#: ../class.sms-source.php:20 ../class.sms-source.php:49
+#: ../includes/class.sms-source.php:20 ../includes/class.sms-source.php:50
 msgid "SMS"
 msgstr "SMS"
 
-#: ../class.sms-source.php:49
+#: ../includes/class.sms-source.php:43 ../includes/class.sms-source.php:70
+msgid "Look this"
+msgstr ""
+
+#: ../includes/class.sms-source.php:50
 msgid "Click to share on SMS"
 msgstr "Clique para compartilhar no SMS"
 
-#: ../class.sms-source.php:64
-msgid "Read this"
-msgstr "Leia isso"
+#: ../jetpack-sms.php:43
+msgid ""
+"Jetpack has NOT been activated! You need to install and activate the Jetpack"
+" plugin to work sharing with SMS."
+msgstr ""
 
-#: ../jetpack-sms.php:103
+#: ../jetpack-sms.php:121
 msgid "Donate"
 msgstr "Doar"

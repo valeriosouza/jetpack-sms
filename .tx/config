@@ -1,0 +1,8 @@
+[main]
+host = https://www.transifex.com
+[sms-sharing-button-for-jetpack.jetpack-sms]
+file_filter = languages/jetpack-sms-<lang>.po
+source_file = languages/jetpack-sms.pot
+source_lang = en_US
+type = POT
+minimum_perc = 50
