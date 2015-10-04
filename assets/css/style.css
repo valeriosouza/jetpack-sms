@@ -2,6 +2,16 @@
 * 1.1 SMS
 */
 
+@media screen and (min-width: 800px) {
+	a.share-sms.sd-button.share-icon{
+		display: none!important;
+	}
+}
+
+.sd-content ul li.preview-item div.option.option-smart-off a {
+    display: inline-block!important;
+}
+
 /* Icon and Text */
 .sd-social-icon .sd-content ul li.share-sms a:before,
 .sd-social-text .sd-content ul li.share-sms a:before,

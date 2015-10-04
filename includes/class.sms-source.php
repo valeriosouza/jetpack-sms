@@ -36,11 +36,10 @@ class jesms_Share_SMS extends Sharing_Source {
 
 	function get_display( $post ) {
 		$locale = $this->guess_locale_from_lang( get_locale() );
-		if ( wp_is_mobile() ) {
 			if( $this->smart )
 				return sprintf(
 					'<div class="sms_button"><a href="sms::?body=%s:%20%s%20-%20%s?utm_source=jetpack-sharing%26utm_medium=sms%26utm_campaign=mobile" class="share-sms %s" title="%s"></a></div>',
-					__('Look this','jetpack-sms'),
+					__('Look at this','jetpack-sms'),
 					rawurlencode( $this->get_share_title( $post->ID ) ),
 					rawurlencode( $this->get_share_url( $post->ID ) ),
 					esc_attr( $locale ),
@@ -48,7 +47,6 @@ class jesms_Share_SMS extends Sharing_Source {
 				);
 			else
 				return $this->get_link( get_permalink( $post->ID ), _x( 'SMS', 'share to', 'jetpack-sms' ), __( 'Click to share on SMS', 'jetpack-sms' ), 'share=sms' );
-		}
 	}
 
 	function display_header() {
@@ -67,7 +65,7 @@ class jesms_Share_SMS extends Sharing_Source {
 		), $this->get_share_url( $post->ID ) );
 
 		$params = array(
-		    'body' => __( 'Look this', 'jetpack-sms' ) . ': ' . $this->get_share_title( $post->ID ) .' - ' . $url,
+		    'body' => __( 'Look at this', 'jetpack-sms' ) . ': ' . $this->get_share_title( $post->ID ) .' - ' . $url,
 		);
 
 		$sms_url = 'sms:?' . http_build_query( $params );
