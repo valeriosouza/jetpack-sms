@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Jetpack SMS\n"
-"POT-Creation-Date: 2015-09-17 23:37-0300\n"
-"PO-Revision-Date: 2015-09-17 23:37-0300\n"
+"POT-Creation-Date: 2015-10-04 19:56-0300\n"
+"PO-Revision-Date: 2015-10-04 19:56-0300\n"
 "Last-Translator: Valério Souza <eu@valeriosouza.com.br>\n"
 "Language-Team: \n"
 "Language: en\n"
@@ -16,15 +16,15 @@ msgstr ""
 "X-Poedit-SearchPath-0: ..\n"
 "X-Poedit-SearchPath-1: .\n"
 
-#: ../includes/class.sms-source.php:20 ../includes/class.sms-source.php:50
+#: ../includes/class.sms-source.php:20 ../includes/class.sms-source.php:49
 msgid "SMS"
 msgstr ""
 
-#: ../includes/class.sms-source.php:43 ../includes/class.sms-source.php:70
-msgid "Look this"
+#: ../includes/class.sms-source.php:42 ../includes/class.sms-source.php:68
+msgid "Look at this"
 msgstr ""
 
-#: ../includes/class.sms-source.php:50
+#: ../includes/class.sms-source.php:49
 msgid "Click to share on SMS"
 msgstr ""
 
@@ -34,6 +34,18 @@ msgid ""
 "plugin to work sharing with SMS."
 msgstr ""
 
-#: ../jetpack-sms.php:121
+#: ../jetpack-sms.php:124
 msgid "Donate"
+msgstr ""
+
+#: ../jetpack-sms.php:134
+msgid "More add-ons"
+msgstr ""
+
+#: ../jetpack-sms.php:147
+#, php-format
+msgid ""
+"Like the plugin to share the SMS Sharing Button for Jetpack? Develop free "
+"plugins takes work! Be my boss and make a <a target=\"_blank\" href=\"%1$s"
+"\">donation of any amount</a>. | <a href=\"%2$s\">Hide Notice</a>"
 msgstr ""
