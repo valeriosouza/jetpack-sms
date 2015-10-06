@@ -4,7 +4,7 @@ Donate link: http://wordlab.com.br/donate/
 Tags: Jetpack, social, sharing, share, SNS, sms, VIBER, Jetpack Sharing, Button SMS, SMS Button for Jetpack Sharing, SMS Sharing Button for Jetpack
 Requires at least: 3.8
 Tested up to: 4.2
-Stable tag: 1.1.1
+Stable tag: 1.1.3
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl.txt
 
@@ -62,6 +62,10 @@ The icon of SMS only appears on smartphones and tablets devices.
 
 == Changelog ==
 
+= 1.1.3 - 06/10/2015 =
+
+* Fixed bugs in translate
+
 = 1.1.1 - 03/10/2015 =
 
 * Fixed errors in Cache Plugin
@@ -71,6 +75,10 @@ The icon of SMS only appears on smartphones and tablets devices.
 * Initial Beta Release
 
 == Upgrade Notice ==
+
+= 1.1.3 - 06/10/2015 =
+
+* Fixed bugs in translate
 
 = 1.1.1 - 03/10/2015 =
 

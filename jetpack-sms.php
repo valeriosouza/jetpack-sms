@@ -3,7 +3,7 @@
  * Plugin Name: SMS Sharing Button for Jetpack
  * Plugin URI: http://valeriosouza.com.br/portfolio/sms-sharing-button-for-jetpack/
  * Description: Add SMS button to Jetpack Sharing
- * Version: 1.1.1
+ * Version: 1.1.3
  * Author: Valerio Souza, WordLab Academy
  * Author URI: http://www.valeriosouza.com.br
  * License: GPLv3 or later
@@ -48,7 +48,7 @@ function js_dependencies_notice() {
 define( 'jesms__PLUGIN_DIR',  plugin_dir_path( __FILE__ ) );
 define( 'jesms__PLUGIN_URL',  plugin_dir_url( __FILE__ ) );
 define( 'jesms__PLUGIN_FILE', __FILE__ );
-define( 'jesms__VERSION',     '1.1.1' );
+define( 'jesms__VERSION',     '1.1.3' );
 
 add_action( 'init', array( 'Jetpack_SMS_Pack', 'init' ) );
 
@@ -71,10 +71,12 @@ class Jetpack_SMS_Pack {
 	}
 
 	private function __construct() {
-		add_action( 'wp_enqueue_scripts',    array( &$this, 'register_assets' ) );
-		add_action( 'admin_enqueue_scripts', array( &$this, 'admin_menu_assets' ) );
-		add_action( 'admin_notices', 		 array( &$this, 'plugin_donate_notice' ) );
-		add_action( 'admin_init', 			 array( &$this, 'plugin_donate_ignore' ) );
+		add_action( 'wp_enqueue_scripts',    	array( &$this, 'register_assets' ) );
+		add_action( 'admin_enqueue_scripts', 	array( &$this, 'admin_menu_assets' ) );
+		add_action( 'admin_notices', 		 	array( &$this, 'plugin_donate_notice' ) );
+		add_action( 'admin_init', 			 	array( &$this, 'plugin_donate_ignore' ) );
+		register_deactivation_hook( __FILE__,	array( &$this, 'update' ));
+
 
 		if( did_action('plugins_loaded') ) {
 			$this->require_services();
@@ -83,6 +85,12 @@ class Jetpack_SMS_Pack {
 		}
 		add_filter( 'plugin_row_meta', array( &$this, 'plugin_row_donate' ), 10, 2 );
 		add_filter( 'plugin_row_meta', array( &$this, 'plugin_row_more' ), 10, 2 );
+	}
+
+	static function update() {
+		global $current_user;
+	    $user_id = $current_user->ID;
+		delete_user_meta($user_id, 'sms_ignore_notice');
 	}
 
 	function register_assets() {
@@ -144,7 +152,7 @@ class Jetpack_SMS_Pack {
 	        /* Check that the user hasn't already clicked to ignore the message */
 		if ( ! get_user_meta($user_id, 'sms_ignore_notice') ) {
 	        echo '<div class="updated"><p>';
-	        printf(__('Like the plugin to share the SMS Sharing Button for Jetpack? Develop free plugins takes work! Be my boss and make a <a target="_blank" href="%1$s">donation of any amount</a>. | <a href="%2$s">Hide Notice</a>'), 'http://wordlab.com.br/donate/?utm_source=plugin&utm_medium=donate-notice&utm_campaign=jetpack-sms', '?sms_nag_ignore=0');
+	        printf('%s<a target="_blank" href="%s">%s</a>. | <a href="%s">%s</a>',__('Like the plugin to share the SMS Sharing Button for Jetpack? Develop free plugins takes work! Be my boss and make a ', 'jetpack-sms'), 'http://wordlab.com.br/donate/?utm_source=plugin&utm_medium=donate-notice&utm_campaign=jetpack-sms', __('donation of any amount', 'jetpack-sms'), '?sms_nag_ignore=0',__('This plugin does not deserve a donation', 'jetpack-sms'));
 	        echo "</p></div>";
 		}
 	}
