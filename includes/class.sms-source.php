@@ -38,7 +38,7 @@ class jesms_Share_SMS extends Sharing_Source {
 		$locale = $this->guess_locale_from_lang( get_locale() );
 			if( $this->smart )
 				return sprintf(
-					'<div class="sms_button"><a href="sms::?body=%s:%20%s%20-%20%s%s" class="share-sms %s" title="%s"></a></div>',
+					'<div class="sms_button"><a href="sms::?body=%s: %s - %s%s" class="share-sms %s" title="%s"></a></div>',
 					__('Look at this','jetpack-sms'),
 					rawurlencode( $this->get_share_title( $post->ID ) ),
 					rawurlencode( $this->get_share_url( $post->ID ) ),
