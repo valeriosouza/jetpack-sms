@@ -6,6 +6,12 @@
 	a.share-sms.sd-button.share-icon{
 		display: none!important;
 	}
+	.sd-social-official .sd-content li.share-sms .sms_button{
+		display: none!important;
+	}
+	a.share-sms.sd-button.no-icon{
+		display: none!important;
+	}
 }
 
 .sd-content ul li.preview-item div.option.option-smart-off a {
