@@ -1,11 +1,11 @@
-# 
+#
 # Translators:
 # Valério Souza <valeriosza@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Sms Sharing Button for Jetpack\n"
 "POT-Creation-Date: 2015-10-05 21:35-0300\n"
-"PO-Revision-Date: 2015-10-06 00:43+0000\n"
+"PO-Revision-Date: 2015-10-08 23:23-0300\n"
 "Last-Translator: Valério Souza <valeriosza@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/valeriosouza/sms-sharing-button-for-jetpack/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
@@ -32,9 +32,7 @@ msgid "Click to share on SMS"
 msgstr "Clique para compartilhar via SMS"
 
 #: ../jetpack-sms.php:43
-msgid ""
-"Jetpack has NOT been activated! You need to install and activate the Jetpack"
-" plugin to work sharing with SMS."
+msgid "Jetpack has NOT been activated! You need to install and activate the Jetpack plugin to work sharing with SMS."
 msgstr "Jetpack não está ativado! Você deve instalar e ativar o plugin Jetpack para conseguir usar o compartilhamento via SMS."
 
 #: ../jetpack-sms.php:132
@@ -46,9 +44,7 @@ msgid "More add-ons"
 msgstr "Outros Add-ons"
 
 #: ../jetpack-sms.php:155
-msgid ""
-"Like the plugin SMS Sharing Button for Jetpack? Develop free plugins takes "
-"work! Be my boss and make a "
+msgid "Like the plugin SMS Sharing Button for Jetpack? Develop free plugins takes work! Be my boss and make a "
 msgstr "Gosta do plugin SMS Sharing Button para Jetpack? Desenvolver plugins gratuitos dá trabalho! Seja meu chefe e "
 
 #: ../jetpack-sms.php:155
